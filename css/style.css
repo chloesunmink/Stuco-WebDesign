@@ -1,0 +1,155 @@
+@import 'reset.css';
+html {
+    font-family: Proxima Nova, Arial, sans-serif;
+    background: #fcfcfc;
+}
+
+.clear {
+    clear: both;
+}
+
+img { 
+    display: block; 
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+
+header nav { 
+    margin-top: 10px; 
+}
+
+/*
+header nav ul {
+    display: flex;
+    flex-direction: row; 
+    float: left; 
+    padding: 25px; 
+
+}
+*/
+
+header nav ul li a {
+    font-size: 16px;
+    color: rgb(120,150,20);
+}
+
+
+
+header nav ul ul li a {
+    font-size: 16px;
+    color: rgb(120,150,20);
+/*    a is for specific styling (fontsize, color, etc.) */
+}
+
+header nav ul ul {
+    display: none; 
+    
+}
+
+header nav ul li:hover ul {
+    display: flex;
+    flex-direction: row;
+    position: absolute; 
+    color: rgb(150,20,30); 
+    font-size: 12px;
+/*    ul is for display, position, general styling*/
+}
+
+header nav ul ul li {
+    box-sizing: border-box; 
+    padding: 20px;
+/*    li is for padding, margins, etc.*/
+}
+
+header nav ul ul ul li {
+    display: none;
+}
+
+header nav ul ul li:hover ul li {
+    display: block;
+    position: relative; 
+    padding: 20px;
+}
+
+header nav ul ul ul li a {
+    color: rgb(150,20,30); 
+    font-size: 12px; 
+}
+
+header {
+    background:none;
+    box-sizing: border-box;
+    width: relative; 
+    height: 300px; 
+    padding: 30px; 
+    border: 1px solid none; 
+}
+
+header a img {
+    max-width: 200px;
+    width: 200px; 
+    height: relative; 
+/*    position: relative; */
+    float: right;
+    padding: 5px; 
+}
+
+main {
+    display: block;
+    position: relative;
+    position: relative;
+    width: 100%; 
+/*    float: left;*/
+/*    margin-right: 5%;*/
+    box-sizing: border-box;
+} 
+
+section, aside {
+    padding: 30px;
+}
+
+footer { 
+    display: block;
+    position: relative;
+    width: 50%;
+    padding: 30px;
+     
+}
+footer nav { 
+    padding: 25px;
+}
+
+    
+
+
+@media screen and (max-width: 570px){
+    
+   
+    
+    header nav ul li:hover ul {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box; 
+        position: relative; 
+    }
+    
+    header nav ul ul ul li {
+        display: none;
+    }
+    
+    header nav ul ul li:hover ul li {
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    main {  
+        position: relative;
+        font-size: 14px;
+    }
+
+}
+    
+    
